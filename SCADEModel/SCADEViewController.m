@@ -336,6 +336,9 @@ SensorInfo the_sensor_info;
     
     //NSLog(@"%.8f",)
    // NSLog(@"%3.5f,%3.5f,%3.5f",the_sensor_info.latitude,the_sensor_info.longitude,the_sensor_info.altitude);
+    
+    
+    
     Step();
     glFlush();
 }
