@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0807426F9EE014AC0A73354F /* target_configuration.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FE54A28897F3C87EBAF7D61 /* target_configuration.c */; };
 		1DDF4DF99463E062A5713E50 /* aol_font_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A23472085F0A2A5E96D74AF /* aol_font_table.c */; };
+		374D0C39201C25B4001D944E /* aol_font_table1.c in Sources */ = {isa = PBXBuildFile; fileRef = 374D0C38201C25B4001D944E /* aol_font_table1.c */; };
+		374D0C3B201C3FE8001D944E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374D0C3A201C3FE8001D944E /* CoreLocation.framework */; };
+		374D0C3D201C5422001D944E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374D0C3C201C5422001D944E /* AVFoundation.framework */; };
 		5E2F18AE2008DE0A00978D56 /* Tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F18AD2008DE0A00978D56 /* Tcp.c */; };
 		739A4AE1BDD3021A0DAE73A2 /* arj_display_adaptor.c in Sources */ = {isa = PBXBuildFile; fileRef = E9144D85BEAC1CADCDB45B13 /* arj_display_adaptor.c */; };
 		758F4402AA5DCB0F4A6A42B4 /* aol_symbology_layer.c in Sources */ = {isa = PBXBuildFile; fileRef = E7C34C5F821351E8EC29E3CF /* aol_symbology_layer.c */; };
@@ -44,6 +47,9 @@
 		0CA1491288E49F652DFFFA4A /* target_configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target_configuration.h; sourceTree = "<group>"; };
 		1077407B995523E16FF79845 /* aol_symbology_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aol_symbology_layer.h; sourceTree = "<group>"; };
 		2CA64CB0895A8DD4424720D0 /* arj_display_adaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arj_display_adaptor.h; sourceTree = "<group>"; };
+		374D0C38201C25B4001D944E /* aol_font_table1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aol_font_table1.c; sourceTree = "<group>"; };
+		374D0C3A201C3FE8001D944E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		374D0C3C201C5422001D944E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3C104C4CA985BCC4D8B1BA0E /* aol_font_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aol_font_table.h; sourceTree = "<group>"; };
 		4FE54A28897F3C87EBAF7D61 /* target_configuration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = target_configuration.c; sourceTree = "<group>"; };
 		5A23472085F0A2A5E96D74AF /* aol_font_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aol_font_table.c; sourceTree = "<group>"; };
@@ -106,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374D0C3D201C5422001D944E /* AVFoundation.framework in Frameworks */,
+				374D0C3B201C3FE8001D944E /* CoreLocation.framework in Frameworks */,
 				DB91013A19ED717800B47613 /* CoreMotion.framework in Frameworks */,
 				DBDE5C00174D085F00F85E6B /* QuartzCore.framework in Frameworks */,
 				DB7F9D2C1716AB18009EEAD7 /* UIKit.framework in Frameworks */,
@@ -122,6 +130,7 @@
 		DB68D125174CB71C00E5CBB7 /* CodeSDY */ = {
 			isa = PBXGroup;
 			children = (
+				374D0C38201C25B4001D944E /* aol_font_table1.c */,
 				65AA4909BA093156DE6A893E /* aol_color_table.c */,
 				A2B744C9923251CBA7270C11 /* aol_color_table.h */,
 				5A23472085F0A2A5E96D74AF /* aol_font_table.c */,
@@ -170,6 +179,8 @@
 		DB7F9D2A1716AB18009EEAD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				374D0C3C201C5422001D944E /* AVFoundation.framework */,
+				374D0C3A201C3FE8001D944E /* CoreLocation.framework */,
 				DB91013919ED717800B47613 /* CoreMotion.framework */,
 				DBDE5BFF174D085F00F85E6B /* QuartzCore.framework */,
 				DB7F9D2B1716AB18009EEAD7 /* UIKit.framework */,
@@ -315,6 +326,7 @@
 				DB7F9D3C1716AB18009EEAD7 /* main.m in Sources */,
 				DB7F9D401716AB18009EEAD7 /* SCADEAppDelegate.m in Sources */,
 				DB7F9D4D1716AB18009EEAD7 /* SCADEViewController.m in Sources */,
+				374D0C39201C25B4001D944E /* aol_font_table1.c in Sources */,
 				DB4A39301716BFB40007BA27 /* Pointer.m in Sources */,
 				C92345D49AA4B33CB7E1FF0D /* aol_color_table.c in Sources */,
 				1DDF4DF99463E062A5713E50 /* aol_font_table.c in Sources */,

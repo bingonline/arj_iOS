@@ -10,7 +10,8 @@
 aol_typ_symbology_layer symbology_layer_ctx;
 aol_typ_symbology_layer* p_symbology_layer_ctx = &symbology_layer_ctx;
 
-
+long target_periodicity=30;
+const char *specification_name="bing";
 
 /* Reset function */
 

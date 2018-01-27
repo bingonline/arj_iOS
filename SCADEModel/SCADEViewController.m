@@ -13,6 +13,7 @@
 #import "SCADEViewController.h"
 #import "Pointer.h"
 #import <CoreMotion/CoreMotion.h>
+#import <AVFoundation/AVFoundation.h>
 
 #define IOS_DEV_ENV
 #define ES2_DEV_ENV
@@ -52,7 +53,9 @@ extern void BHVR_Magnetometer(const sdy_magnetometer_event_t *evt);
     sgl_type_statemachine* glob_s_context;
 }
 
+@property (strong,nonatomic)CMMotionManager *motionManger;
 @property (strong, nonatomic) EAGLContext *context;
+@property (strong,nonatomic) CLLocationManager *locationManger;
 - (void)computeSizes;
 - (void)initOGLX;
 - (void)setupGL;
@@ -62,6 +65,22 @@ extern void BHVR_Magnetometer(const sdy_magnetometer_event_t *evt);
 
 
 
+typedef struct
+{
+    double latitude;
+    double longitude;
+    float altitude;
+    float pitch;
+    float roll;
+    float magHeading;
+    float heading;
+    float course;
+    float speed;
+    
+}SensorInfo;
+
+
+SensorInfo the_sensor_info;
 
 @implementation SCADEViewController
 
@@ -115,7 +134,44 @@ extern void BHVR_Magnetometer(const sdy_magnetometer_event_t *evt);
     [self.context renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer*)view.layer];
     lastTime = 0.0;
     [self setupGL];
+    
+  
+    self.motionManger=[[CMMotionManager alloc]init];
+    if(self.motionManger.deviceMotionAvailable)
+    {
+        [self.motionManger startDeviceMotionUpdates];
+    }else
+    {
+        NSLog(@"deviceMotion not available");
+    }
+    self.locationManger=[[CLLocationManager alloc]init];
+    self.locationManger.delegate=self;
+    self.locationManger.desiredAccuracy=kCLLocationAccuracyBest;
+    
+    [self.locationManger startUpdatingLocation];
+    
 }
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    CLLocation *currLocation=[locations firstObject];
+    the_sensor_info.latitude=currLocation.coordinate.latitude;
+    the_sensor_info.longitude=currLocation.coordinate.longitude;
+    the_sensor_info.altitude=currLocation.altitude;
+    the_sensor_info.speed=currLocation.speed;
+    the_sensor_info.course=currLocation.course;
+    NSLog(@"%3.5f,%3.5f,%3.5f,%3.5f,%3.5f",the_sensor_info.latitude,the_sensor_info.longitude,the_sensor_info.altitude,the_sensor_info.speed,the_sensor_info.course);
+    
+}
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    if(newHeading.headingAccuracy>0)
+    {
+        the_sensor_info.heading=newHeading.trueHeading;
+        the_sensor_info.magHeading=newHeading.magneticHeading;
+    }
+}
+
 
 - (void)dealloc
 {
@@ -270,10 +326,21 @@ extern void BHVR_Magnetometer(const sdy_magnetometer_event_t *evt);
             pointers[i].state = POINTER_NOT_RELEASED;
         }
     }
-    TcpRecv();
+    //TcpRecv();
+    CMDeviceMotion *deviceMotion=self.motionManger.deviceMotion;
+    //if(self.motionManger.deviceMotionAvailable)
+    //{
+        //NSLog(@"%+.2f\n",deviceMotion.attitude.yaw);
+        //deviceMotion
+    //}
+    
+    //NSLog(@"%.8f",)
+   // NSLog(@"%3.5f,%3.5f,%3.5f",the_sensor_info.latitude,the_sensor_info.longitude,the_sensor_info.altitude);
     Step();
     glFlush();
 }
+
+
 
 - (void)reset
 {

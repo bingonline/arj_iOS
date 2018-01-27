@@ -9,6 +9,9 @@ extern void Reset(void);
 extern void Step(void);
 extern void BHVR_SetAsynchronousACK(void);
 
+extern long target_periodicity;
+extern const char *specification_name;
+
 /* Declarations of connections functions called inside Reset and Step */
 
 #endif /* DISPLAY_ADAPTOR */

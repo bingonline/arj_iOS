@@ -1,44 +1,7 @@
-I0001: SCADE Display KCG Version 6.6.4b (build i9) (c) Esterel Technologies SAS 2006-2016 started at 2018-01-11T19:05:51.
-I0005: Command line: ScadeDisplayKCG.exe -outdir E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY -prefix aol_ -texturemax 1024 E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx E:\AndroidStudioProjects\ScadeDisplay\texture_table.stt E:\AndroidStudioProjects\ScadeDisplay\font_table.sft E:\AndroidStudioProjects\ScadeDisplay\color_table.sct E:\AndroidStudioProjects\ScadeDisplay\line_width_table.swt E:\AndroidStudioProjects\ScadeDisplay\line_stipple_table.sst
-I0013: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:86638: No code generated for object "bi-font" statically invisible or inactive.
-I0013: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:73615: No code generated for object "FMA" statically invisible or inactive.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:444: Check input "ThrottleModeActiveLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:447: Check input "ThrottleModeActiveLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:471: Check input "ThrottleModeAnnunciatorVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:474: Check input "AutopilotLateralModeAnnunciatorVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:477: Check input "AutopilotVerticalModeAnnunciatorVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:480: Check input "AutopilotStateCWSAnnunciatorVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:489: Check input "ThrottleModeAnnunciatorBoxVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:492: Check input "ThrottleModeArmedLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:495: Check input "ThrottleModeArmedLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:498: Check input "AutopilotLateralModeAnnunciatorBoxVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:501: Check input "AutopilotLateralModeActiveLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:504: Check input "AutopilotLateralModeActiveLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:507: Check input "AutopilotLateralModeArmedLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:510: Check input "AutopilotLateralModeArmedLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:513: Check input "AutopilotVerticalModeAnnunciatorBoxVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:516: Check input "AutopilotVerticalModeActiveLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:519: Check input "AutopilotVerticalModeActiveLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:522: Check input "AutopilotVerticalModeArmedLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:525: Check input "AutopilotVerticalModeArmedLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:528: Check input "AutopilotStateAnnunciatorBoxVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:531: Check input "ControlWheelSteeringActiveLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:534: Check input "ControlWheelSteeringActiveLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:702: Check input "AutopilotStateActiveLegendVisibleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:705: Check input "AutopilotStateActiveLegendStyleDisplay", never used.
-W0202: E:\AndroidStudioProjects\ScadeDisplay\arj.sgfx:819: Check input "MinRadioAltitudeVisibility", never used.
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_symbology_layer.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_symbology_layer.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_font_table.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_font_table.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_texture_table.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_texture_table.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_color_table.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_color_table.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_line_stipple_table.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_line_stipple_table.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_line_width_table.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_line_width_table.c
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\aol_imported_functions.h
-I0006: Generated file: E:\AndroidStudioProjects\ScadeDisplay\arj_iOS\CodeSDY\ScadeDisplayKCG.log
-I0002: SCADE Display KCG finished with 0 error(s) at 2018-01-11T19:05:53.
+I0001: SCADE Display KCG Version 6.6.4b (build i9) (c) Esterel Technologies SAS 2006-2016 started at 2018-01-27T10:54:10.
+I0005: Command line: ScadeDisplayKCG.exe -outdir F:\TestPrj\TestScade\kcg -texturemax 1024 F:\TestPrj\TestScade\specification.sgfx
+I0006: Generated file: F:\TestPrj\TestScade\kcg\aol_symbology_layer.h
+I0006: Generated file: F:\TestPrj\TestScade\kcg\aol_symbology_layer.c
+I0006: Generated file: F:\TestPrj\TestScade\kcg\aol_imported_functions.h
+I0006: Generated file: F:\TestPrj\TestScade\kcg\ScadeDisplayKCG.log
+I0002: SCADE Display KCG finished with 0 error(s) at 2018-01-27T10:54:10.

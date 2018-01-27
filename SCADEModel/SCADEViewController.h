@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-
-@interface SCADEViewController : GLKViewController
+#import <CoreLocation/CoreLocation.h>
+#include "arj_display_adaptor.h"
+@interface SCADEViewController : GLKViewController <CLLocationManagerDelegate>
 
 @end
